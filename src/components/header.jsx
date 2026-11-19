@@ -1,0 +1,40 @@
+import "./header.css";
+import { Link, Links } from "react-router-dom";
+import Meet from "./meet";
+import Pricing from "./pricing";
+import Platform from "./platform";
+import Solutions from "./solutions";
+
+
+const Header = () => {
+    return (
+        <>
+            <header className="header">
+                <div className="d-flex align-items-center container mt-4 justify-content-between">
+                    <div> <img src="/caludeicon.png" alt="" width="140px" height="36px" /></div>
+                    <div className="d-flex gap-4">
+                        <div className="d-flex gap-1 meet-claude"> <a href="" style={{ textDecoration: "none", color: "#30302e" }}>Meet Claude</a><i className="bi bi-chevron-down"></i> <Meet /> </div>
+                        <div className="d-flex gap-1 platform"><a href="" style={{ textDecoration: "none", color: "#30302e" }}>Platform</a><i className="bi bi-chevron-down"></i> <Platform /> </div>
+                        <div className="d-flex gap-1 solutions-1"> <a href="" style={{ textDecoration: "none", color: "#30302e" }}>Solutions</a><i className="bi bi-chevron-down"></i> <Solutions /> </div>
+                        <div className="d-flex gap-1 pricing-1"><a href="" style={{ textDecoration: "none", color: "#30302e" }}>Pricing</a><i className="bi bi-chevron-down"></i> <Pricing /></div>
+                        <div className="d-flex gap-1"> <a href="" style={{ textDecoration: "none", color: "#30302E" }}>Resources</a><i className="bi bi-chevron-down"></i></div>
+                        <div className="d-flex gap-1"><Link to="/login" style={{ textDecoration: "none", color: "#30302E" }}>Login</Link></div>
+
+                        <Link to="/contact"><button type="button" className="btn rounded-3" style={{ border: "1px solid #4D4C48", color: "#4D4C48", width: "150px" }}>Contact Sale</button></Link>
+                        <Link to="/login"> <button type="button" className="btn rounded-3" style={{ backgroundColor: "#141413", color: "#FAF9F5" }}>Try Claude</button></Link>
+                    </div>
+                </div>
+
+                <hr className="mt-3" />
+                <div className="d-flex justify-content-between container" style={{ fontSize: "14px", fontFamily: "anthropicSans", color: "#30302E" }}>
+                    <p>Claude Code</p>
+                    <div className="d-flex gap-1"> <a href="" style={{ textDecoration: "none", color: "#30302E" }}>Explore Here</a><i class="bi bi-chevron-down"></i></div>
+                </div>
+                <hr className="mt-0" />
+
+            </header>
+
+        </>
+    )
+}
+export default Header

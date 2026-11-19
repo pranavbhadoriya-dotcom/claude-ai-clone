@@ -1,0 +1,93 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FAF9F5;
+    z-index: 1000;
+}
+.meet-claude{
+    position: relative;
+    /* display: inline-block; */
+}
+
+.meet-claude .card1{
+    position: absolute;
+    top: 120%;
+    left: 250%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    transition: .3s;
+    z-index: 1000;
+}
+
+.meet-claude:hover .card1{
+    opacity: 1;
+    visibility: visible;
+}
+
+.pricing-1{
+    position: relative;
+    /* display: inline-block; */
+}
+
+.pricing-1 .dropdown-card{
+     position: absolute;
+    top: 120%;
+    left: 150%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    transition: .3s;
+    z-index: 999;
+
+}
+
+.pricing-1:hover .dropdown-card{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.platform{
+    position: relative;
+    /* display: inline-block; */
+}
+
+.platform .platform-1{
+     position: absolute;
+    top: 120%;
+    left: 150%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    transition: .3s;
+    z-index: 999;
+
+}
+
+.platform:hover .platform-1{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.solutions-1{
+    position: relative;
+    /* display: inline-block; */
+}
+
+.solutions-1 .solutions{
+     position: absolute;
+    top: 120%;
+    left: 150%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    transition: .3s;
+    z-index: 999;
+
+}
+
+.solutions-1:hover .solutions{
+    opacity: 1;
+    visibility: visible;
+}
+

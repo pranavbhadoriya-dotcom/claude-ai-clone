@@ -1,0 +1,25 @@
+.companies{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+}
+
+.left,
+.right{
+    display: flex;
+    flex-direction: column;   /* Ek ke niche ek */
+    gap: 70px;                /* Images ke beech gap */
+}
+
+.left img,
+.right img{
+    width: 140px;             /* Apne hisab se */
+    object-fit: contain;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

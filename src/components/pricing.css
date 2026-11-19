@@ -1,0 +1,26 @@
+.dropdown-card{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 12px;
+    box-shadow: 0 10px 35px rgba(0,0,0,.08);
+}
+
+.menu-item{
+    height: 52px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #222;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.menu-item:hover{
+    background: #efede6;
+}
